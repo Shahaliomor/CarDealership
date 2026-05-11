@@ -7,10 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class DealershipFileManagerTest {
 
     @Test
-    void TestVehicleListLoads(){
-        DealershipFileManager.readFile();
-        assertFalse(DealershipFileManager.vehicles.isEmpty());
-    }
-    
+    void testVehicleListLoads() {
 
+        DealershipFileManager.readFile();
+
+        assertFalse(DealershipFileManager.dealership.getAllVehicles().isEmpty());
+    }
 }
