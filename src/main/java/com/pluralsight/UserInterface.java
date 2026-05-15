@@ -83,10 +83,7 @@ public class UserInterface {
     }
 
     private void init() {
-
-        DealershipFileManager.readFile();
-
-        dealership = DealershipFileManager.dealership;
+        dealership = DealershipFileManager.getDealership();
     }
 
     private void processGetByPriceRequest() {

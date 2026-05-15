@@ -9,8 +9,8 @@ class DealershipFileManagerTest {
     @Test
     void testVehicleListLoads() {
 
-        DealershipFileManager.readFile();
+        Dealership dealership = DealershipFileManager.getDealership();
 
-        assertFalse(DealershipFileManager.dealership.getAllVehicles().isEmpty());
+        assertFalse(dealership.getAllVehicles().isEmpty());
     }
 }
