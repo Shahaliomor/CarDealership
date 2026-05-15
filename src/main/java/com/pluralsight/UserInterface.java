@@ -202,6 +202,7 @@ public class UserInterface {
         Vehicle vehicle = new Vehicle(vin, year, make, model, type, color, mileage, price);
 
         dealership.addVehicle(vehicle);
+        DealershipFileManager.saveDealership(dealership);
 
         System.out.println("Vehicle added successfully.");
     }
